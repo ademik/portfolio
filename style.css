@@ -1,0 +1,186 @@
+html,
+body {
+  font-size: 16px;
+  /* this padding avoids the #social box to attach at the bottom of mobile and tablet screens */
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+/* styles for the texts ---------*/
+.name-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: playfair-display, serif, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  font-style: normal;
+}
+
+.subtitle {
+  margin-bottom: 0;
+  position: relative;
+  top: 20px;
+  font-family: montserrat, sans-serif, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.8em;
+  font-style: normal;
+}
+
+.description {
+  margin-top: 0;
+  position: relative;
+  top: 25px;
+  font-family: montserrat, sans-serif, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.6em;
+  font-style: normal;
+}
+
+/* styles for the two rectangles ---------*/
+.box-style {
+  background: #ffffff;
+  box-shadow: 0px 0.720598px 5.03261px rgba(0, 0, 0, 0.0116889),
+    0px 3.15744px 10.8636px rgba(0, 0, 0, 0.01636),
+    0px 7.8857px 18.1332px rgba(0, 0, 0, 0.0197532),
+    0px 15.8568px 28.0547px rgba(0, 0, 0, 0.0229137),
+    0px 28.8651px 43.2559px rgba(0, 0, 0, 0.026568),
+    0px 51.2033px 70.9234px rgba(0, 0, 0, 0.0319132),
+    0px 103px 145px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+}
+
+/* rectangles settings ---------*/
+#box {
+  margin: auto;
+  margin-top: 50px;
+  padding: 50px;
+  width: 840px;
+  height: 520px;
+  left: 291px;
+  top: 84px;
+}
+
+#social {
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  top: 150px;
+  width: 492px;
+  height: 154px;
+  font-size: 4.8em;
+}
+
+/* social icons ---------*/
+#icons {
+  position: absolute;
+  top: 40px;
+  left: 17px;
+}
+.icon {
+  width: 75px;
+  height: 82px;
+}
+
+/* photo profile ---------*/
+#adem {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  transition: 1s box-shadow;
+}
+
+#adem:hover {
+  box-shadow: 1px 7px 24px 0px rgba(163, 163, 163, 0.75);
+}
+
+/* mobile portrait ---------*/
+@media screen and (max-width: 480px) {
+  body {
+    padding-bottom: 120px;
+  }
+
+  #box {
+    width: 240px;
+    height: 650px;
+    padding-bottom: 70px;
+  }
+
+  #social {
+    width: 200px;
+    height: 350px;
+  }
+
+  .subtitle {
+    font-size: 1.4em;
+  }
+
+  .description {
+    font-size: 1.1em;
+  }
+
+  #icons {
+    text-align: center;
+    left: 5px;
+  }
+
+  .box-style {
+    box-shadow: 0px 0.720598px 5.03261px rgba(0, 0, 0, 0.0116889),
+      0px 3.15744px 10.8636px rgba(0, 0, 0, 0.01636),
+      0px 7.8857px 18.1332px rgba(0, 0, 0, 0.0197532),
+      0px 15.8568px 28.0547px rgba(0, 0, 0, 0.0229137),
+      0px 28.8651px 43.2559px rgba(0, 0, 0, 0.026568);
+  }
+}
+
+/* mobile landscape ---------*/
+@media screen and (min-width: 320px) and (max-width: 820px) and (orientation: landscape) {
+  body {
+    padding-bottom: 80px;
+  }
+  
+  #box {
+    width: 600px;
+    padding-bottom: 70px;
+  }
+
+  .box-style {
+    box-shadow: 0px 0.720598px 5.03261px rgba(0, 0, 0, 0.0116889),
+      0px 3.15744px 10.8636px rgba(0, 0, 0, 0.01636),
+      0px 7.8857px 18.1332px rgba(0, 0, 0, 0.0197532),
+      0px 15.8568px 28.0547px rgba(0, 0, 0, 0.0229137),
+      0px 28.8651px 43.2559px rgba(0, 0, 0, 0.026568);
+  }
+}
+
+/* tablet portrait ---------*/
+@media screen and (min-width: 750px) and (max-width: 1024px) and (orientation: portrait) {
+  #box {
+    width: 600px;
+    padding-bottom: 90px;
+  }
+}
+
+/* automatic dark mode ---------*/
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background: #000;
+  }
+
+  .name-title,
+  .subtitle,
+  .description {
+    color: #ffffff;
+    opacity: 87%;
+  }
+
+  .subtitle,
+  .description {
+    font-weight: 300;
+  }
+
+  .box-style {
+    background: #282828;
+    box-shadow: none;
+  }
+}
