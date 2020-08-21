@@ -3,7 +3,7 @@ Basic portfolio project for Start2Impact
 
 🤝 You can find the basic index and style files for html and css
 
-📑 The other files are for the favicon expect ademProfile.jpeg that is used as the profile pic
+📑 The other files are for the favicon expect for ademProfile.jpeg that is used as the profile pic
 
 📃 Site.webmanifest is needed if the site gets used as a PWA
 
